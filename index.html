@@ -1,0 +1,32 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>用javascript进行声音播放控制</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body>
+    <video
+    id="video"
+    controls="controls"
+    preload="none"
+    src="./candy.mp3" type="video/mp4"
+    muted
+  >
+  </video>
+    <script>
+        function playmusic() {
+            video.play();
+        }
+        
+        window.onload = function () {
+          // var audio = new Audio('./candy.mp3');
+          //   audio.play()
+            console.log('111');
+            const [video] = document.getElementById('video');
+            video.play();
+        }()
+        </script>
+
+</body>
+</html>
